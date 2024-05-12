@@ -1,9 +1,18 @@
+import Weather from "./Weather";
+import Input from "./Input";
+
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App container">
-      <h1>Hello world</h1>
+      <header>
+        <Input />
+      </header>
+      <h1>
+        {" "}
+        <Weather />
+      </h1>
     </div>
   );
 }

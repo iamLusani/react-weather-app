@@ -1,0 +1,43 @@
+section {
+  color: #ffffff;
+  background-color: #17193c;
+  font-family: "Roboto", sans-serif;
+  border-radius: 15px;
+}
+section h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: 20px !important;
+}
+
+section h1 {
+  height: 96px;
+  float: left;
+  font-size: 75px;
+  color: #ffea51;
+  margin-left: 65px;
+}
+
+section img {
+  width: 96px;
+}
+
+section small {
+  display: block;
+  text-align: left;
+  margin-top: -1em;
+  font-size: 1em;
+  float: left;
+  clear: both;
+  color: #ffffff;
+  margin-left: 99px;
+}
+
+section p {
+  font-size: 15px;
+  margin-right: 2em;
+}
+
+section h4 {
+  font-size: 20px;
+}
