@@ -2,8 +2,8 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <div className="App container">
+      <h1>Hello world</h1>
     </div>
   );
 }
