@@ -38,6 +38,7 @@ export default function Weather(props) {
                 </h1>
                 <img
                   src="https://icons.twnmm.com/wx_icons/v2/18.png"
+                  alt="description-icon"
                   className="float-left"
                 />{" "}
                 <br />
