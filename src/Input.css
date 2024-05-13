@@ -4,9 +4,43 @@
   color: rgb(243, 243, 248);
   margin-left: 300px;
   text-align: center;
-  cursor: grab;
-  background-color: #0b17f5;
+  cursor: pointer;
+  background-color: #313bf5;
   border: none;
   border-radius: 20px;
   margin-top: 100px;
+  transition: all 300ms ease-in-out;
+}
+.submitForm {
+  width: 100px;
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 20px;
+  color: rgb(243, 243, 248);
+  background-color: #2530fc;
+  border: none;
+  transition: all 300ms ease-in-out;
+}
+
+.submitForm:hover {
+  background-color: #b6b9ec;
+  color: rgb(65, 65, 119);
+}
+.searchForm:hover {
+  background-color: #c7c8ce;
+  color: rgb(1, 1, 48);
+  border: none;
+}
+@media (max-width: 1000px) {
+  .searchForm {
+    width: 200px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 50px;
+  }
+  .submitForm {
+    width: 100px;
+    margin-left: 5px;
+    height: 40px;
+  }
 }

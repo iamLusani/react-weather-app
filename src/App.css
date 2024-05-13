@@ -1,0 +1,5 @@
+body {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(./background-image.avif);
+  background-size: cover;
+}

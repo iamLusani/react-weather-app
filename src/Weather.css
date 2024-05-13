@@ -3,6 +3,7 @@ section {
   background-color: #17193c;
   font-family: "Roboto", sans-serif;
   border-radius: 15px;
+  opacity: 70%;
 }
 section h2 {
   font-size: 24px;
@@ -35,9 +36,48 @@ section small {
 
 section p {
   font-size: 15px;
-  margin-right: 2em;
+  margin-left: 40px;
+  text-align: center;
 }
 
 section h4 {
   font-size: 20px;
+  text-align: center;
+}
+.heading {
+  display: block;
+  text-align: right;
+  float: right;
+  font-size: 40px;
+  margin-top: 30px;
+}
+@media (max-width: 900px) {
+  section h2 {
+    font-size: 14px;
+    margin-left: 10px !important;
+  }
+  section h1 {
+    height: 26px;
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  section img {
+    width: 36px;
+  }
+  section small {
+    margin-top: -5px;
+    font-size: 15px;
+    margin-left: 39px;
+  }
+  section p {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  section h4 {
+    font-size: 13px;
+  }
+  .heading {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
