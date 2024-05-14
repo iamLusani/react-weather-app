@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormateDate from "./FormateDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -16,6 +17,7 @@ export default function Weather(props) {
       country: response.data.sys.country,
       visability: response.data.visibility,
       wind: response.data.wind.speed,
+      time: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -44,10 +46,9 @@ export default function Weather(props) {
                 <br />
                 <small>{weatherData.description}</small> <br />
               </div>
-              <div className="col-5">
+              <div className="col-7">
                 <h2 className="heading">
-                  12:00:00 <br />
-                  Thursday 25 may
+                  <FormateDate date={weatherData.time} />
                 </h2>
               </div>
             </div>
