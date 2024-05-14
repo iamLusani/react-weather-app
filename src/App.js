@@ -1,5 +1,4 @@
 import Weather from "./Weather";
-import Input from "./Input";
 
 import "./App.css";
 

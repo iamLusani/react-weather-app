@@ -67,6 +67,54 @@ section h4 {
   top: -5px;
   font-size: 10px;
 }
+.searchForm {
+  width: 450px;
+  height: 50px;
+  color: rgb(243, 243, 248);
+  margin-left: 300px;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid rgb(191, 190, 248);
+  border-radius: 20px;
+  margin-top: 160px;
+  transition: all 300ms ease-in-out;
+  font-size: 25px;
+}
+.submitForm {
+  width: 100px;
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 20px;
+  color: rgb(243, 243, 248);
+  background-color: #2530fc;
+  border: none;
+  transition: all 300ms ease-in-out;
+  font-size: 25px;
+}
+
+.submitForm:hover {
+  background-color: #b6b9ec;
+  color: rgb(65, 65, 119);
+}
+.searchForm:hover {
+  background-color: #c7c8ce;
+  color: rgb(1, 1, 48);
+  border: none;
+}
+@media (max-width: 1000px) {
+  .searchForm {
+    width: 190px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 190px;
+  }
+  .submitForm {
+    width: 100px;
+    height: 30px;
+  }
+}
+
 @media (max-width: 900px) {
   section h2 {
     font-size: 14px;
