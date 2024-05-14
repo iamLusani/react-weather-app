@@ -33,10 +33,10 @@
 }
 @media (max-width: 1000px) {
   .searchForm {
-    width: 200px;
+    width: 190px;
     height: 30px;
-    margin-left: 10px;
-    margin-top: 290px;
+    margin-left: 5px;
+    margin-top: 190px;
   }
   .submitForm {
     width: 100px;
