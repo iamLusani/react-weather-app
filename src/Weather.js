@@ -19,6 +19,7 @@ export default function Weather(props) {
       visability: response.data.visibility,
       wind: response.data.wind.speed,
       time: new Date(response.data.dt * 1000),
+      iconUrl: response.data.weather[0].icon,
     });
   }
   function search() {
@@ -53,18 +54,18 @@ export default function Weather(props) {
                   {weatherData.city}, {weatherData.country} Weather
                 </h2>
                 <h1>
+                  <img
+                    src={weatherData.iconUrl}
+                    alt="description-icon"
+                    className="float-left"
+                  />
                   {Math.round(weatherData.temperature)}
                   <span className="sub-unit">°C</span>
                   <span className="secondary-temp">
                     / feels like {Math.round(weatherData.feels)}{" "}
                     <span className="tertairy-unit">°C</span>
                   </span>
-                </h1>
-                <img
-                  src="https://icons.twnmm.com/wx_icons/v2/18.png"
-                  alt="description-icon"
-                  className="float-left"
-                />{" "}
+                </h1>{" "}
                 <br />
                 <small>{weatherData.description}</small> <br />
               </div>
