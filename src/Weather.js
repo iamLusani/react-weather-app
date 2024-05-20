@@ -19,7 +19,7 @@ export default function Weather(props) {
       visability: response.data.visibility,
       wind: response.data.wind.speed,
       time: new Date(response.data.dt * 1000),
-      iconUrl: response.data.weather[0].icon,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   function search() {
