@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormateDate from "./FormateDate";
 import axios from "axios";
 import "./Weather.css";
+import Units from "./Units";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -49,44 +50,39 @@ export default function Weather(props) {
         <section>
           <div className="container">
             <div className="row">
-              <div className="col-5">
+              <div className="col-7">
                 <h2>
                   {weatherData.city}, {weatherData.country} Weather
                 </h2>
                 <h1>
-                  <img
-                    src={weatherData.iconUrl}
-                    alt="description-icon"
-                    className="float-left"
-                  />
-                  {Math.round(weatherData.temperature)}
-                  <span className="sub-unit">°C</span>
-                  <span className="secondary-temp">
-                    / feels like {Math.round(weatherData.feels)}{" "}
-                    <span className="tertairy-unit">°C</span>
-                  </span>
+                  <Units celsius={weatherData.temperature} />
                 </h1>{" "}
+                <img
+                  src={weatherData.iconUrl}
+                  alt="description-icon"
+                  className="float-left"
+                />
                 <br />
                 <small>{weatherData.description}</small> <br />
               </div>
-              <div className="col-7">
+              <div className="col-5">
                 <h2 className="heading">
                   <FormateDate date={weatherData.time} />
                 </h2>
               </div>
             </div>
           </div>
-          <div className="container">
+          <div className="container  ">
             <div className="row">
-              <div className="col-4">
+              <div className="col-3 ">
                 <h4>Wind</h4>
                 <p>{weatherData.wind} km/h</p>
               </div>
-              <div className="col-4">
+              <div className="col-3">
                 <h4>Humidity</h4>
                 <p>{weatherData.humididty}%</p>
               </div>
-              <div className="col-4">
+              <div className="col-3 ">
                 <h4>Visibility</h4>
                 <p>{weatherData.visability}km</p>
               </div>
