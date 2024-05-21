@@ -89,6 +89,11 @@ export default function Weather(props) {
             </div>
           </div>
         </section>
+        This project was coded by{" "}
+        <a href="https://github.com/iamLusani">Lusani</a> and{" "}
+        <a href="https://github.com/iamLusani/react-weather-app">
+          is opensourced on github
+        </a>
       </div>
     );
   } else {
