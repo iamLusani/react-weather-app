@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormateDate from "./FormateDate";
+import WeatherForcast from "./WeatherForcast";
 import axios from "axios";
 import "./Weather.css";
 import Units from "./Units";
@@ -50,50 +51,49 @@ export default function Weather(props) {
         <section>
           <div className="container">
             <div className="row">
-              <div className="col-7">
+              <div className="col-5">
                 <h2>
                   {weatherData.city}, {weatherData.country} Weather
-                </h2>
-                <h1>
-                  <Units celsius={weatherData.temperature} />
-                </h1>{" "}
+                </h2>{" "}
                 <img
                   src={weatherData.iconUrl}
                   alt="description-icon"
                   className="float-left"
                 />
+                <h1>
+                  <Units celsius={weatherData.temperature} />
+                </h1>{" "}
                 <br />
                 <small>{weatherData.description}</small> <br />
               </div>
-              <div className="col-5">
+              <div className="col-7">
                 <h2 className="heading">
                   <FormateDate date={weatherData.time} />
                 </h2>
               </div>
             </div>
           </div>
-          <div className="container  ">
+          <div className="container">
             <div className="row">
-              <div className="col-3 ">
+              <div className="col-4">
                 <h4>Wind</h4>
                 <p>{weatherData.wind} km/h</p>
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <h4>Humidity</h4>
                 <p>{weatherData.humididty}%</p>
               </div>
-              <div className="col-3 ">
+              <div className="col-4">
                 <h4>Visibility</h4>
                 <p>{weatherData.visability}km</p>
               </div>
             </div>
           </div>
+          <WeatherForcast />
         </section>
-        This project was coded by{" "}
-        <a href="https://github.com/iamLusani">Lusani</a> and{" "}
-        <a href="https://github.com/iamLusani/react-weather-app">
-          is opensourced on github
-        </a>
+        <footer>
+          This project was coded by Lusani and it is open-sourced on github.
+        </footer>
       </div>
     );
   } else {

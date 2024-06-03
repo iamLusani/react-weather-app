@@ -18,13 +18,14 @@ section h1 {
   font-size: 65px;
   color: #ffea51;
   margin-right: 0;
+  position: relative;
+  top: 15px;
 }
 
 section img {
   width: 106px;
   position: relative;
-  top: -18px;
-  right: 20px;
+  right: 5px;
 }
 
 section small {
@@ -106,6 +107,17 @@ section h4 {
   color: rgb(1, 1, 48);
   border: none;
 }
+footer {
+  font-size: 20px;
+  text-align: center;
+  color: #0b17f7;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+footer a {
+  text-decoration: none;
+}
+
 @media (max-width: 1000px) {
   .searchForm {
     width: 190px;
