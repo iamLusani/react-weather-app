@@ -5,7 +5,8 @@ export default function App() {
   return (
     <div className="App">
       {" "}
-      <Weather />
+      <Weather city="Ermelo" />
+      <br />
       <footer>
         This project was coded by{" "}
         <a href="https://github.com/iamLusani">Lusani</a>.{" "}

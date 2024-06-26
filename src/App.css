@@ -1,13 +1,16 @@
 footer {
   font-family: Merienda;
   text-align: center;
-  color: rgb(160, 149, 149);
+  color: rgb(117, 116, 116);
   font-weight: 700;
+  position: relative;
+  bottom: -520px;
+  padding-top: 18px;
 }
 
 footer a {
   text-decoration: none;
-  color: rgb(160, 149, 149);
+  color: rgb(248, 250, 252);
 }
 a:hover {
   text-decoration: underline;
