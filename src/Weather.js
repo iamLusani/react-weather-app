@@ -13,7 +13,15 @@ export default function Weather() {
               <div className="time">12:00</div>
               <div className="date">Monday, 18 july</div>
 
-              <div className="others"></div>
+              <div className="others">
+                <p>
+                  Humidity <span className="space"> 54%</span> <br />
+                  Humidity <span className="space"> 54%</span> <br />
+                  Humidity <span className="space"> 54%</span> <br />
+                  Humidity <span className="space"> 54%</span> <br />
+                  Humidity <span className="space"> 54%</span>{" "}
+                </p>
+              </div>
             </div>
             <div className="place-container">
               <div className="time-zone">DURBAN, ZA</div>

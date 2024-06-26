@@ -117,3 +117,14 @@ video {
 .future-forcast .weather-forcast {
   display: flex;
 }
+.others .space {
+  padding-left: 100px;
+  color: #f7f3c0;
+}
+.others {
+  font-size: 20px;
+}
+.space {
+  font-size: 15px;
+  font-family: Merienda;
+}
